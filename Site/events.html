@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--
+    Full Name: Nathaniel Angeles
+    Section: WD201
+    Activity:
+    Date: 
+     -->
+    <meta charset="UTF-8">
+    <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Francois+One&family=Roboto+Slab:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel = "shortcut icon" href = "img/favicon.ico" >
+    <link rel = "icon" type = "image/png" sizes = "32x32" href = "img/favicon.ico">
+    <link rel = "apple-touch-icon" sizes="180x180" href = "img/apple-touch-icon.png">
+    <link rel = "icon" sizes="192x192" href = "img/android-chrome-192.png">
+    <title>Pampanga Esports Club</title>
+</head>
+<body>
+    <div id="container">
+
+        <!-- Mobile Nav-->
+        <nav class = "mobile-nav">
+            <div id = "menu-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="history.html">History</a>
+                <a href="events.html">Events</a>
+                <a href="contact.html">Contact Us</a>
+            </div>
+            <a class= "menu-icon" onclick="hamburger()">
+                <div>&#9776;</div>
+            </a>
+        </nav>
+
+        <header id = "pec-logo">
+            <a href = "index.html">
+                <img src="img/pampesports_logo.png" alt="Pampanga Esports Club Logo">
+            </a>
+        </header>
+
+        <!-- Tablet, Desktop Nav -->
+        <nav class = "tablet-desktop">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="history.html">History</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <div id="banner" class = "tablet-desktop">
+                <img src = "img/esports-banner.png" alt = "banner">
+            </div>
+
+            <div class = "mobile">
+                <h3>Esports Workshops</h3>
+                <p>Fundamentals of Competitive Play & VOD Review: TR 5am &amp; 5pm</p>
+                <p>In-Game Communication & Shotcalling: MWF 6am &amp; 6pm</p>
+                <p>Esports Mental Health, Reflexes & Ergonomic Performance: MWF 8am &amp; 7:15pm</p>
+                <p>Tournament Production & Broadcast Mechanics: TR 6am &amp; 6pm</p>
+                <p>Esports Management & Team Operations: TR 6am &amp; 6pm</p>
+                <p>Game Design Balance & Meta Mechanics: MWF 7am &amp; 6pm</p>
+            </div>
+
+            <div class = "tablet-desktop">
+                <table>
+                    <caption>Esports Workshop Events</caption>
+                    <tr>
+                        <th>Class</th>
+                        <th>Days</th>
+                        <th>Times</th>
+                        <th>Instructor</th>
+                        <th>Room</th>
+                    </tr>
+                    <tr>
+                        <td>In-Game Communication & Shotcalling</td>
+                        <td>Mon, Wed, Fri</td>
+                        <td>6:00am, 6:00pm</td>
+                        <td>Faker</td>
+                        <td>B</td>
+                    </tr>
+                    <tr>
+                        <td>Fundamentals of Competitive Play & VOD Review</td>
+                        <td>Tue, Thu</td>
+                        <td>5:00am, 5:00pm</td>
+                        <td>n0tail</td>
+                        <td>B</td>
+                    </tr>
+                    <tr>
+                        <td>Esports Mental Health, Reflexes & Ergonomic Performance</td>
+                        <td>Mon, Wed, Fri</td>
+                        <td>8:00am, 7:15pm</td>
+                        <td>Veenus</td>
+                        <td>A</td>
+                    </tr>
+                    <tr>
+                        <td>Tournament Production & Broadcast Mechanics</td>
+                        <td>Tue, Thu</td>
+                        <td>6:00am, 6:00pm</td>
+                        <td>Caedrel</td>
+                        <td>A</td>
+                    </tr>
+                    <tr>
+                        <td>Esports Management & Team Operations</td>
+                        <td>Tue, Thu</td>
+                        <td>6:00am, 6:00pm</td>
+                        <td>Ceb</td>
+                        <td>B</td>
+                    </tr>
+                    <tr>
+                        <td>Game Design Balance & Meta Mechanics</td>
+                        <td>Mon, Wed, Fri</td>
+                        <td>7:00am, 6:00pm</td>
+                        <td>Phreak</td>
+                        <td>A</td>
+                    </tr>
+                </table>
+            </div>
+
+            <div id = "music-sample">
+                <h3>Ready to make your mark in the world of Esports? Just like how Faker made his mark, with this iconic music!</h3>
+                <audio controls>
+                    <source src = "media/pec_audio.mp3" type = "audio/mp3">
+                    <source src = "media/pec_audio.ogg" type = "audio/ogg">
+                    <p>Your browser does not support the audio element.</p>
+                </audio>
+            </div>
+
+            <div id = "form">
+                <h2>Complete the form below to begin your free trial.</h2>
+
+                <form class = "form-grid">
+                    <fieldset>
+                        <legend>Player Information</legend>
+                        <label for = "fName">First Name:</label>
+                        <input type= "text" id = "fName" name = "fName" required>
+
+                        <label for = "lName">Last Name:</label>
+                        <input type= "text" id = "lName" name = "lName" required>
+
+                        <label for = "email">Email:</label>
+                        <input type= "email" id = "email" name = "email" required>
+
+                        <label for = "phone">Phone:</label>
+                        <input type= "tel" id = "phone" name = "phone" required>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Additional Information</legend>
+                        <p>I would like more information about:</p>
+
+                        <label for = "history"><input type = "checkbox" name = "interest" id = "history" value = "History">History</label>
+                        
+                        <label for = "events"><input type = "checkbox" name = "interest" id = "events" value = "Events">Events</label>
+
+                        <label for = "workshop"><input type = "checkbox" name = "interest" id = "workshop" value = "Workshops">Workshops</label>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Referral Source</legend>
+                        <label for = "reference">How did you find us?</label>
+                        <select name = "reference" id = "reference">
+                            <option value = "ad">Advertisement</option>
+                            <option value = "friend">Friend</option>
+                            <option value = "google">Google</option>
+                            <option value = "social">Social Media</option>
+                            <option value = "other">Other</option>
+                        </select>
+
+                        <label for = "questions">Questions?</label>
+                        <textarea id = "questions" name = "questions" rows = "5" cols = "35"></textarea>
+
+                        <label for = "promo">Promo Code</label>
+
+                        <input type = "text" id = "promo" name = "promo">
+
+                    </fieldset>
+
+                    <input type = "submit" id = "submit" value = "submit" class = "btn">
+
+                </form>
+            </div>
+        </main>
+
+        <footer>
+
+            <div class = "copyright">
+                <p>&copy; Copyright 2026. All rights reserved.</p>
+                <p><a href = "mailto:pampangaesportsclub@gmail.com">pampangaesportsclub.net</a></p>
+            </div>
+        </footer>
+        
+    </div>
+    
+    <script src = "scripts/script.js"></script>
+
+    
+</body>
+</html>

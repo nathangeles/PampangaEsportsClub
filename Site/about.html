@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--
+    Full Name: Nathaniel Angeles
+    Section: WD201
+    Activity:
+    Date: 
+     -->
+    <meta charset="UTF-8">
+    <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Francois+One&family=Roboto+Slab:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel = "shortcut icon" href = "img/favicon.ico" >
+    <link rel = "icon" type = "image/png" sizes = "32x32" href = "img/favicon.ico">
+    <link rel = "apple-touch-icon" sizes="180x180" href = "img/apple-touch-icon.png">
+    <link rel = "icon" sizes="192x192" href = "img/android-chrome-192.png">
+    <title>Pampanga Esports Club</title>
+</head>
+<body>
+    <div id="container">
+
+        <!-- Mobile Nav-->
+        <nav class = "mobile-nav">
+            <div id = "menu-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="history.html">History</a>
+                <a href="events.html">Events</a>
+                <a href="contact.html">Contact Us</a>
+            </div>
+            <a class= "menu-icon" onclick="hamburger()">
+                <div>&#9776;</div>
+            </a>
+        </nav>
+
+        <header id = "pec-logo">
+            <a href = "index.html">
+                <img src="img/pampesports_logo.png" alt="Pampanga Esports Club Logo">
+            </a>
+        </header>
+
+        <!-- Tablet, Desktop Nav -->
+        <nav class = "tablet-desktop">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="history.html">History</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <video controls poster = "img/esports-banner.png">
+                <source src = "media/ffc_video.mp4" type = "video/mp4">
+                <source src = "media/ffc_video.webm" type = "video/webm">
+                <track src = "media/captions.vtt" kind = "captions" srclang= "en-us" label = "English">
+                <track src = "media/descriptions.vtt" kind = "descriptions" srclang = "en-us" label = "English Descriptions">
+                <p>Your browser does not support the video element</p>
+
+            </video>
+            <section id="genres">
+                <h1>Genres</h1>
+                <img src="img/genres.png" alt="Genres" class = "round">
+                <p>We offer a variety of gaming genres to cater to different interests and skill levels. Whether you're into fast-paced action games, strategic role-playing games, or immersive simulation experiences, we have something for everyone. Explore our diverse range of genres and find your perfect gaming experience!</p>
+                <ul class ="tablet-desktop">
+                    <li>Fighting</li>
+                    <li>FPS</li>
+                    <li>MOBA</li>
+                </ul>
+            </section>
+
+            <section id="tournaments">
+                <h1>Tournaments</h1>
+                <img src="img/tournaments.jpg" alt="Tournaments" class = "round">
+                <p>Join our exciting tournaments and showcase your gaming skills! We host regular competitions across various genres, providing a platform for gamers to compete, connect, and win amazing prizes. Check out our upcoming tournaments and register to be part of the action!</p>
+                <ul class ="tablet-desktop">
+                    <li>Fighting Tournament</li>
+                    <li>FPS Tournament</li>
+                    <li>MOBA Tournament</li>
+                </ul>
+            </section>
+
+            <section id="workshops">
+                <h1>Workshops</h1>
+                <img src="img/workshop.jpg" alt="Workshops" class = "round">
+                <p>Enhance your gaming skills and knowledge through our interactive workshops. Our expert instructors provide valuable insights, tips, and strategies to help you improve your gameplay. Join our workshops to learn from the best and take your gaming experience to the next level!</p>
+                <ul class ="tablet-desktop">
+                    <li>Fighting Workshop</li>
+                    <li>FPS Workshop</li>
+                    <li>MOBA Workshop</li>
+                </ul>
+            </section>
+
+            <section id="lifestyle" class = "tablet-desktop">
+                <h1>Lifestyle</h1>
+                <img src="img/lifestyle.jpg" alt="Lifestyle">
+                <p>Discover the gaming lifestyle and connect with like-minded individuals in our community. From casual gaming sessions to social events, we provide opportunities for gamers to share their passion, make new friends, and enjoy the gaming culture. Embrace the gaming lifestyle and be part of our vibrant community!</p>
+                <dl>
+                    <dt>Casual Gaming</dt>
+                        <dd>Enjoy relaxed gaming sessions with friends and family.<span class = "viewex" onclick="burpees()"> View Example.</span></dd>
+                    <dt>Social Events</dt>
+                        <dd>Participate in community gatherings and tournaments.<span class = "viewex" onclick="plank()"> View Example.</span></dd>
+                    <dt>Gaming Culture</dt>
+                        <dd>Immerse yourself in the rich traditions and practices of the gaming world.<span class = "viewex" onclick="mountain()"> View Example.</span></dd>
+                </dl>
+
+                <video controls id = "example">
+                    <source id = "vid-src" src = "vid" type = "video/mp4">
+                    <track id = "despsrc" src = "des" kind = "descriptions" srclang="en" label ="English Descriptions">
+                    <p>Your browser does not support the video element.</p>
+                </video>
+            </section>
+        </main>
+
+        <footer>
+
+            <div class = "copyright">
+                <p>&copy; Copyright 2026. All rights reserved.</p>
+                <p><a href = "mailto:pampangaesportsclub@gmail.com">pampangaesportsclub.net</a></p>
+            </div>
+        </footer>
+        
+    </div>
+    
+    <script src = "scripts/script.js"></script>
+
+    
+</body>
+</html>
